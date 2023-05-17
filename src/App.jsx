@@ -1,7 +1,11 @@
-import React from "react";
+import Button from './Button';
 
 function App() {
-  return <h1>Olá mundo</h1>;
+  return (
+    <div>
+      <Button width={300}>Clique</Button>
+    </div>
+  );
 }
 
 export default App;
