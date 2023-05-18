@@ -1,9 +1,7 @@
-import Button from './Button';
-
 function App() {
   return (
     <div>
-      <Button width={300}>Clique</Button>
+      <h1>Hello</h1>
     </div>
   );
 }
