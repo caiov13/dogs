@@ -3,7 +3,7 @@ import React from 'react';
 function reducer(state, action) {
   switch (action) {
     case 'aumentar':
-      return state + 1;
+      return state + 2;
     case 'diminuir':
       return state - 1;
     default:
