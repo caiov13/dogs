@@ -10,7 +10,7 @@ function Header() {
           <Dogs />
         </Link>
         <Link className={styles.login} to="/login">
-          Login / Criar
+          Login | Criar
         </Link>
       </nav>
     </header>
