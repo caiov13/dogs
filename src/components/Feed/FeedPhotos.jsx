@@ -26,7 +26,6 @@ function FeedPhotos() {
         {data.map((photo) => (
           <FeedPhotosItem key={photo.id} photo={photo} />
         ))}
-        <FeedPhotosItem />
       </ul>
     );
   else return null;
