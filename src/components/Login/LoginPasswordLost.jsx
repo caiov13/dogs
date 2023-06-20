@@ -26,7 +26,7 @@ function LoginPasswordLost() {
       ) : (
         <form onSubmit={handleSubmit}>
           <Input label="E-mail / Usuário" type="text" name="login" {...login} />
-          {loading ? <Button>Eviando...</Button> : <Button>Enviar E-mail</Button>}
+          {loading ? <Button disabled>Eviando...</Button> : <Button>Enviar E-mail</Button>}
         </form>
       )}
 
