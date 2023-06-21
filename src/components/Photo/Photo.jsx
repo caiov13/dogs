@@ -21,7 +21,7 @@ function Photo() {
   if (data)
     return (
       <section className="container mainContainer">
-        <Head title={data.photo.title} description="Página da foto do cachorro." />;
+        <Head title={data.photo.title} description="Página da foto do cachorro." />
         <PhotoContent single={true} data={data} />
       </section>
     );
