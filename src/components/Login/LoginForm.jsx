@@ -7,6 +7,7 @@ import { UserContext } from '../../UserContext';
 import Error from '../../Helper/Error';
 import styles from './LoginForm.module.css';
 import stylesBtn from '../Forms/Button.module.css';
+import Head from '../../Helper/Head';
 
 function LoginForm() {
   const username = useForm();
@@ -24,6 +25,8 @@ function LoginForm() {
 
   return (
     <section className="animeLeft">
+      <Head title="Login" description="Página de login." />
+
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
@@ -31,9 +34,11 @@ function LoginForm() {
         {loading ? <Button disabled>Carregando...</Button> : <Button>Entrar</Button>}
         <Error error={error} />
       </form>
+
       <Link className={styles.perdeu} to="/login/perdeu">
         Perdeu a senha?
       </Link>
+
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site</p>
