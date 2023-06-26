@@ -20,7 +20,7 @@ function LoginPasswordLost() {
   }
 
   return (
-    <section>
+    <section className="animeLeft">
       <Head title="Perdeu a senha" description="Página para recuperar a senha." />
 
       <h1 className="title">Perdeu a senha?</h1>
